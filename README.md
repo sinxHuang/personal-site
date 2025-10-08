@@ -1,4 +1,4 @@
-<h1 align="center">🌀 easy-vitepress-blog 🏖️</h1>
+<h1 align="center">👋 Hi, This is Sinx's Blog 🏖️</h1>
 
 基于 VitePress 快速搭建个人博客，自动化路由处理并预置了更加丰富的页面。
 
@@ -12,4 +12,4 @@
 
 ## 📋 开始
 
-[点击阅读使用指南](https://example.zbwer.work/)
+Based on template easy-vitepress-blog.
