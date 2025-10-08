@@ -2,7 +2,7 @@
   <VPTeamPage>
     <VPTeamPageTitle>
       <template #title>🎨 Friends 🙌</template>
-      <template #lead>Awesome Friends from Diverse Fields of Expertise</template>
+      <template #lead>我喜欢你💌</template>
     </VPTeamPageTitle>
     <div class="px-6 md:px-12 lg:px-16">
       <div class="FriendsContent">
