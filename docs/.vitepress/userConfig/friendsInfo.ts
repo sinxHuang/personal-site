@@ -32,7 +32,7 @@ export const friendsInfo: Friend[] = [
      avatar: "https://avatars.githubusercontent.com/u/141292166?v=4",
      name: "Sashimi-Balls",
      title: "📡 Wireless Communication",
-     link: "https://yushen-wang.github.io",
+     link: "https://sashimi-balls.github.io",
      tag: "UESTC CE",
      color: "sky",
    },
