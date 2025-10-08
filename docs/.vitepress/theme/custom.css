@@ -39,7 +39,7 @@
   margin: 24px auto 12px;
   padding: 0 16px;
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 22px;
 }
 @media (max-width: 960px) {

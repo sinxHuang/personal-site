@@ -9,10 +9,10 @@ hero:
     alt: Sinx
   tagline: "🌟 I Need To sleeP · 超级睡觉大王 · 非典型工科生"
   actions:
-    - theme: brand
-      text: "🌙 Github SinxHuang"
-      link: "https://github.com/sinxHuang"
     - theme: alt
+      text: "🎧  网易云 10000e"
+      link: "https://y.music.163.com/m/user?id=6305445370&dlt=0846&app_version=9.3.63"
+    - theme: brand
       text: "🍠 小红书 Sinx."
       link: "https://xhslink.com/m/5HCZuJ1mT53"
 ---
@@ -34,7 +34,7 @@ hero:
 </div>
 
 <!-- 第二行双卡片：Education / Interests -->
-<div class="home-cards" style="grid-template-columns: 1fr 1fr;">
+<div class="home-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
   <section class="motto-card">
     <div class="motto-chip">🎓 Education</div>
     <ul style="margin:0; padding-left: 18px;">
@@ -52,7 +52,7 @@ hero:
     <div class="motto-chip">⚡️ Interests</div>
     <ul style="margin:0; padding-left: 18px;">
       <li>📖 <strong>Reading</strong>: Literature and science fiction — recently enjoyed <em>The Bright Nights</em> and <em>Is Your Summer Okay?</em></li>
-      <li>🎵 <strong>Music</strong>: Rock, electronic, and pop; especially My Chemical Romance and Xijun Liu</li>
+      <li>🎵 <strong>Music</strong>: Rock, electronic, and pop; especially <em>My Chemical Romance</em> and <em>Xijun Liu</em></li>
       <li>🎮 <strong>Games</strong>: RPG, AVG — favorites include <em>Arknights</em>, <em>Baldur’s Gate 3</em>, <em>Final Fantasy VII Rebirth</em>, <em>The Sinking Will</em>, and <em>Cyberpunk 2077</em></li>
     </ul>
   </section>

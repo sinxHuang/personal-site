@@ -12,13 +12,37 @@ interface Friend {
  * 在此处填写你的友情链接
  */
 export const friendsInfo: Friend[] = [
-//   {
-//     avatar: "https://avatars.githubusercontent.com/u/108183563?v=4",
-//     name: "ZzzRemake",
-//     title: "🚀 全能 🐳",
-//     link: "https://zzzremake.github.io/",
-//     tag: "Research Associate",
-//     color: "indigo",
-//   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/57825561?v=4",
+     name: "Runze Cheng",
+     title: "🐺 A wolf Developer",
+     link: "https://aidcheng.github.io",
+     tag: "UCL CS",
+     color: "indigo",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/114977087?v=4",
+     name: "Yuyang Song",
+     title: "🧩 LLM & Database",
+     link: "https://yuyang-song.github.io",
+     tag: "SCU CS",
+     color: "indigo",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/141292166?v=4",
+     name: "Sashimi-Balls",
+     title: "📡 Wireless Communication",
+     link: "https://yushen-wang.github.io",
+     tag: "UESTC CE",
+     color: "sky",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/60817914?v=4",
+     name: "Charles-Donne",
+     title: "🤖 VLN & Agent & Robotics",
+     link: "https://github.com/Charles-Donne",
+     tag: "CSU EE",
+     color: "sky",
+   },
 
 ];
