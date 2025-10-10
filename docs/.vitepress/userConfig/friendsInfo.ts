@@ -23,7 +23,7 @@ export const friendsInfo: Friend[] = [
    {
      avatar: "https://avatars.githubusercontent.com/u/114977087?v=4",
      name: "Yuyang Song",
-     title: "🧩 LLM & Database",
+     title: "⚡️ LLM & Database",
      link: "https://yuyang-song.github.io",
      tag: "SCU CS",
      color: "indigo",
@@ -42,6 +42,14 @@ export const friendsInfo: Friend[] = [
      title: "🤖 VLN & Agent & Robotics",
      link: "https://github.com/Charles-Donne",
      tag: "CSU EE",
+     color: "sky",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/195511320?v=4",
+     name: "ZHANGXiyuan",
+     title: "🧩 Multimodal & AI4S",
+     link: "https://github.com/ZHANGXiyuan2004",
+     tag: "UESTC EE",
      color: "sky",
    },
 
