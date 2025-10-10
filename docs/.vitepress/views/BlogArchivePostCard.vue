@@ -1,7 +1,7 @@
 <template>
-  <div
-    @click="openLink(post.url)"
-    class="relative py-4 mt-6 transition-all border rounded-lg cursor-pointer dark:border-transparent hover:border-indigo-800 break-inside-avoid-column bg-zinc-50/50 sm:pl-0 dark:bg-slate-800/80 first:mt-0 dark:hover:bg-sky-950/80 dark:hover:border-sky-300"
+  <a
+    :href="post.url"
+    class="relative block py-4 mt-6 transition-all border rounded-lg cursor-pointer dark:border-transparent hover:border-indigo-800 break-inside-avoid-column bg-zinc-50/50 sm:pl-0 dark:bg-slate-800/80 first:mt-0 dark:hover:bg-sky-950/80 dark:hover:border-sky-300"
   >
     <!-- <p
       class="hidden pl-4 font-mono text-4xl sm:block text-sky-400/50 dark:text-slate-200/50"
@@ -34,15 +34,13 @@
         </p>
       </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup lang="ts">
 import { type Post } from "../utils/types.js";
 import { fileName2Title } from "../userConfig/translations.js";
-import { useRouter } from "vitepress";
 
-const router = useRouter();
 const { post, flow } = defineProps(["post", "flow"]);
 
 // 获取文章标题信息，使用用户自定义的标题或是 md 文件名称
@@ -64,6 +62,5 @@ const getTags = (post: Post) => {
   return rawTagString ? rawTagString.split("/").slice(0, 2) : [];
 };
 
-// 打开文章链接
-const openLink = (link: string) => router.go(link);
+// 导航由原生 <a> 负责，保证无 JS 也可跳转
 </script>

@@ -20,14 +20,14 @@
       </li>
 
       <li
-        @click="openLink(item.link)"
         v-for="(item, index) in latestThreeArticle"
         :key="index"
-        class="mt-6 lg:px-2 list-none min-w-full lg:min-w-[33%] flex-1 cursor-pointer"
+        class="mt-6 lg:px-2 list-none min-w-full lg:min-w-[33%] flex-1"
       >
-        <div
-          class="flex flex-col justify-between p-4 transition-all duration-300 border rounded-lg lg:h-full dark:bg-slate-800 dark:border-slate-900 lg:dark:hover:border-sky-400 bg-zinc-50 group lg:hover:border-indigo-800 hover:-translate-y-3"
-        >
+        <a :href="item.link" class="block">
+          <div
+            class="flex flex-col justify-between p-4 transition-all duration-300 border rounded-lg lg:h-full dark:bg-slate-800 dark:border-slate-900 lg:dark:hover:border-sky-400 bg-zinc-50 group lg:hover:border-indigo-800 hover:-translate-y-3 cursor-pointer"
+          >
           <!-- 更新时间 -->
           <p class="text-sm text-zinc-400">
             {{ getDateTime(item.updateTime) }}
@@ -51,12 +51,13 @@
               {{ tag }}
             </p>
           </div>
-        </div>
+          </div>
+        </a>
       </li>
     </div>
     <div v-if="latestThreeArticle.length" class="flex justify-end pr-5">
-      <div
-        @click="openLink(columnData.link)"
+      <a
+        :href="columnData.link"
         class="flex items-center transition-all cursor-pointer dark:text-slate-400 dark:hover:text-sky-400 text-black/50 hover:text-sky-500"
       >
         <p class="mr-1 text-sm">View More</p>
@@ -73,17 +74,15 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-      </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { useRouter } from "vitepress";
 import { computed } from "vue";
 
 const { columnData } = defineProps(["columnData"]);
-const router = useRouter();
 
 // 计算最新三篇更新的文章
 const latestThreeArticle = computed(() => {
@@ -113,10 +112,7 @@ function getTags(item) {
   let tagsArr = item.tags.split("/").slice(0, 2);
   return tagsArr;
 }
-// 打开文章连接
-function openLink(link) {
-  router.go(link);
-}
+// 链接改为原生 <a>，无需 JS 即可导航
 </script>
 
 <style scoped>

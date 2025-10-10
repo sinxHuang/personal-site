@@ -1,7 +1,9 @@
 <template>
-  <div
-    @click="openLink"
-    class="link-card my-3 p-4 transition-all duration-300 rounded-lg shadow-sm cursor-pointer hover:bg-blue-100/80 dark:shadow-sky-900/80 hover:scale-[0.99] shadow-blue-400/60 dark:bg-sky-950 dark:hover:bg-sky-950/80 bg-blue-200/30 group"
+  <a
+    :href="link"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="link-card my-3 p-4 transition-all duration-300 rounded-lg shadow-sm cursor-pointer hover:bg-blue-100/80 dark:shadow-sky-900/80 hover:scale-[0.99] shadow-blue-400/60 dark:bg-sky-950 dark:hover:bg-sky-950/80 bg-blue-200/30 group block"
   >
     <header class="font-bold">{{ icon || "🐳" }} {{ desc }}</header>
     <footer
@@ -9,12 +11,10 @@
     >
       {{ link }}
     </footer>
-  </div>
+  </a>
 </template>
 
 <script setup>
 const { desc, link, icon } = defineProps(["desc", "link", "icon"]);
-function openLink() {
-  window.open(link, "_blank");
-}
+// 使用原生 <a> 保证无 JS 也可跳转
 </script>

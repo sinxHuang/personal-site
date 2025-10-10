@@ -1,6 +1,8 @@
 <template>
-  <div
-    @click="openLink"
+  <a
+    :href="friendsInfo.link"
+    target="_blank"
+    rel="noopener noreferrer"
     class="flex flex-col items-center w-full h-full p-6 transition-all duration-300 border cursor-pointer bg-stripe group hover:border-indigo-800 dark:hover:border-sky-300 dark:border-transparent bg-slate-50 dark:bg-slate-800 dark:text-slate-300 rounded-xl"
   >
     <!-- 头像 -->
@@ -24,7 +26,7 @@
         🔗{{ shortLink }}
       </p>
     </div>
-  </div>
+  </a>
 </template>
 
 <script setup>
@@ -39,9 +41,7 @@ const shortLink = computed(() => {
   return baseLink.replace(regex, "$2");
 });
 
-function openLink() {
-  window.open(friendsInfo.link, "_blank");
-}
+// 使用原生链接跳转，避免 SSR 阶段的 window 访问问题
 </script>
 
 <style scoped>

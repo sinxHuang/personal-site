@@ -8,9 +8,9 @@
         🏷️ 文章分类
       </h1>
       <div class="mt-4">
-        <div
-          @click="openLink(category.link)"
-          class="relative px-2 py-1 transition-all rounded-lg hover:cursor-pointer hover:bg-sky-200/80 dark:hover:bg-sky-900/80"
+        <a
+          :href="category.link"
+          class="relative block px-2 py-1 transition-all rounded-lg hover:cursor-pointer hover:bg-sky-200/80 dark:hover:bg-sky-900/80"
           v-for="category in categories"
           :key="category.name"
         >
@@ -35,7 +35,7 @@
               ></path>
             </svg>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -69,8 +69,7 @@ const router = useRouter();
 const { types, features } = defineProps(["types", "features"]);
 const categories: Category[] = [...types];
 
-// 打开文章链接
-const openLink = (link: string | undefined) => link && router.go(link);
+// 使用原生 <a> 跳转，避免 SSR/hydration 时路由未就绪
 
 // 随机一言
 const quoteInfo = reactive({
