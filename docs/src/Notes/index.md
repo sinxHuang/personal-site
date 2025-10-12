@@ -11,14 +11,14 @@ types:
     desc: "Study / Work / Life"
     link: "/Notes/Experiences/"
     icon: "✨"
-  - name: "课程学习"
-    desc: "School Courses"
-    link: "/Notes/Classes/"
-    icon: "📖"
   - name: "学习笔记"
-    desc: "Independent Studies"
+    desc: "Courses / Independent Studies"
     link: "/Notes/Study/"
-    icon: "📚"
+    icon: "📖"
+  - name: "生活随笔"
+    desc: "Thoughts / Daily / Hobbies"
+    link: "/Notes/Life/"
+    icon: "🌸"
 # flow: true
 ---
 
