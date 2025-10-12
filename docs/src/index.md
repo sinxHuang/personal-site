@@ -10,8 +10,8 @@ hero:
   tagline: "🌟 I Need To sleeP · 超级睡觉大王 · 非典型工科生"
   actions:
     - theme: alt
-      text: "🎧  网易云 10000e"
-      link: "https://y.music.163.com/m/user?id=6305445370&dlt=0846&app_version=9.3.63"
+      text: "🎓 Academic Version"
+      link: "https://sinxhuang.github.io"
     - theme: brand
       text: "🍠 小红书 Sinx."
       link: "https://xhslink.com/m/5HCZuJ1mT53"
@@ -21,7 +21,7 @@ hero:
 <div class="home-cards">
   <section class="intro-card">
     <p class="intro-hi">你好，我是Sinx，很高兴认识你 👋</p>
-    <h1 class="big-title">🌆 <span class="white-title">一个兴趣使然的探索者.</span></h1>
+    <h1 class="big-title">🌆 <span class="white-title">兴趣使然的探索者.</span></h1>
     <p class="intro-roles">学习笔记 / 生活记录 / 思考漫游 / 游戏测评</p>
   </section>
 
@@ -45,6 +45,7 @@ hero:
       <li>🎓 <strong>Shanghai Jiao Tong University</strong><br>
           📖 Ph.D. Candidate in Electronic Information Engineering, Media Lab · 2026.09 – 2031.06 (Expected)
       </li>
+      <li>📧 <strong>Email</strong>: <a href="mailto:sinxhuang@163.com">sinxhuang@163.com</a></li>
     </ul>
   </section>
 

@@ -30,7 +30,7 @@ export const friendsInfo: Friend[] = [
    },
    {
      avatar: "https://avatars.githubusercontent.com/u/141292166?v=4",
-     name: "Sashimi-Balls",
+     name: "Yushen Wang",
      title: "📡 Wireless Communication",
      link: "https://sashimi-balls.github.io",
      tag: "UESTC CE",
@@ -40,7 +40,7 @@ export const friendsInfo: Friend[] = [
      avatar: "https://avatars.githubusercontent.com/u/60817914?v=4",
      name: "Charles-Donne",
      title: "🤖 VLN & Agent & Robotics",
-     link: "https://github.com/Charles-Donne",
+     link: "https://charlesdonne.vercel.app",
      tag: "CSU EE",
      color: "sky",
    },
@@ -51,6 +51,14 @@ export const friendsInfo: Friend[] = [
      link: "https://github.com/ZHANGXiyuan2004",
      tag: "UESTC EE",
      color: "sky",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/237438682?v=4",
+     name: "Mingyang Shi",
+     title: "⚙️ LLM & Model Compression",
+     link: "https://mingyang2004.github.io",
+     tag: "DUT SE",
+     color: "indigo",
    },
 
 ];
