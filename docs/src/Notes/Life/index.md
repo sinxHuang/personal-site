@@ -12,4 +12,4 @@
 
 ### 🎨 兴趣爱好 - Hobbies & Passions
 
-* [游戏简评-25年上半年:沉没意志｜A Summer's Day｜纸房子](/games251013.md)
+* [游戏简评-25年上半年:沉没意志｜A Summer's Day｜纸房子](./games251013)
