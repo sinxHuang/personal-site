@@ -5,7 +5,7 @@ hero:
   name: "Sinx"
   text: "✨ Ideas in Motion."
   image:
-    src: /logo.png
+    src: https://avatars.githubusercontent.com/u/172581617?v=4
     alt: Sinx
   tagline: "🌟 I Need To sleeP · 超级睡觉大王 · 非典型工科生"
   actions:
@@ -43,7 +43,7 @@ hero:
       </li>
       <br>
       <li>🎓 <strong>Shanghai Jiao Tong University</strong><br>
-          📖 Ph.D. Candidate in Electronic Information Engineering, Media Lab · 2026.09 – 2031.06 (Expected)
+          📖 Incoming Ph.D. Student in Electronic Information Engineering, Media Lab · 2026 – 2031 (Expected)
       </li>
       <li>📧 <strong>Email</strong>: <a href="mailto:sinxhuang@163.com">sinxhuang@163.com</a></li>
     </ul>

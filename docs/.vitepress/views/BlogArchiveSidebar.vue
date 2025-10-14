@@ -78,7 +78,7 @@ const quoteInfo = reactive({
 });
 
 onMounted(async () => {
-  fetch("https://v1.hitokoto.cn?c=a&c=b&c=d&c=i&min_length=10")
+  fetch("https://v1.hitokoto.cn?c=d&c=h&c=i&c=k&min_length=10")
     .then((response) => response.json())
     .then(({ hitokoto, from }) => {
       quoteInfo.string = hitokoto;

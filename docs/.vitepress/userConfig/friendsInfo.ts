@@ -47,7 +47,7 @@ export const friendsInfo: Friend[] = [
    {
      avatar: "https://avatars.githubusercontent.com/u/195511320?v=4",
      name: "ZHANGXiyuan",
-     title: "🧩 Multimodal & AI4S",
+     title: "☀️ Multimodal & AI4S",
      link: "https://github.com/ZHANGXiyuan2004",
      tag: "UESTC EE",
      color: "sky",
@@ -59,6 +59,14 @@ export const friendsInfo: Friend[] = [
      link: "https://mingyang2004.github.io",
      tag: "DUT SE",
      color: "indigo",
+   },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/171577079?v=4",
+     name: "Yao Zhang",
+     title: "💊 MLLM & Multimodal",
+     link: "https://github.com/RatUestc",
+     tag: "UESTC CE",
+     color: "sky",
    },
 
 ];

@@ -7,7 +7,7 @@ export default defineConfig({
   title: "Sinx",
   titleTemplate: "Sinx",
   // 在标签上显示所的 logo
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.svg" }]],
 
   // 网站描述，有利于被搜索引擎捕获
 description:
@@ -20,7 +20,7 @@ description:
   // 主题自定义
   themeConfig: {
     // 网站左上角 logo
-    logo: "/logo.svg",
+    logo: "https://avatars.githubusercontent.com/u/172581617?v=4",
     // 顶部导航栏
     nav: [
       //{ text: "👋 AboutMe", link: "/AboutMe.md" },
