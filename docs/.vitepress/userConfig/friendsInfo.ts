@@ -68,5 +68,13 @@ export const friendsInfo: Friend[] = [
      tag: "UESTC CE",
      color: "sky",
    },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/190742255?v=4",
+     name: "DzrStark",
+     title: "🤖 VLM & VLN & Embodied AI",
+     link: "https://dzrstark.github.io",
+     tag: "XDU EE",
+     color: "sky",
+   },
 
 ];
