@@ -26,11 +26,18 @@
   gap: 8px;
   padding: 8px 14px;
   border-radius: 9999px;
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  font-size: 14px;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.dark .badge-row .pill {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(6px);
   box-shadow: 0 6px 20px rgba(0,0,0,.2) inset, 0 1px 0 rgba(255,255,255,.05);
-  font-size: 14px;
 }
 
 /* === 双卡片区域 === */
@@ -72,45 +79,84 @@
   opacity: .95;
 }
 
-/* 右侧：Motto 深色信息卡 */
+/* 右侧：Motto 信息卡 */
 .motto-card {
   border-radius: 16px;
   padding: 22px 22px 20px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+  color: #1e293b;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 深色模式下的 motto-card */
+.dark .motto-card {
   background: #0e1a2b;
   box-shadow: 0 20px 45px rgba(0,0,0,.35);
   color: #dfe7ff;
   border: 1px solid rgba(255,255,255,.06);
 }
+
 .motto-card .motto-chip {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 6px 10px;
   border-radius: 9999px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.04);
+  border: 1px solid rgba(0,0,0,.08);
   margin-bottom: 10px;
   font-size: 13px;
+  transition: background 0.3s, border-color 0.3s;
 }
+
+.dark .motto-card .motto-chip {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
 .motto-card .motto-1 {
-  color: #74f0d2;
+  color: #059669;
   font-weight: 800;
   font-size: clamp(20px, 2.2vw, 26px);
+  transition: color 0.3s;
 }
+
+.dark .motto-card .motto-1 {
+  color: #74f0d2;
+}
+
 .motto-card .motto-2,
 .motto-card .motto-3,
 .motto-card .motto-4 {
-  color: #dfe7ff;
+  color: #1e293b;
   font-weight: 700;
   font-size: clamp(22px, 2.6vw, 30px);
   letter-spacing: .3px;
+  text-shadow: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.dark .motto-card .motto-2,
+.dark .motto-card .motto-3,
+.dark .motto-card .motto-4 {
+  color: #dfe7ff;
   text-shadow: 0 0 10px rgba(107,182,255,0.25);
 }
+
 .motto-card .motto-3 span {
-  color: #6bb6ff;
+  color: #2563eb;
   font-weight: 800;
+  text-shadow: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.dark .motto-card .motto-3 span {
+  color: #6bb6ff;
   text-shadow: 0 0 18px rgba(107,182,255,0.35);
 }
+
 .motto-card .motto-4 {
   font-size: clamp(24px, 2.8vw, 34px);
 }
@@ -124,16 +170,58 @@
 }
 
 .motto-highlight-blue {
-  background: linear-gradient(90deg, #5fb8ff, #8ce2ff);
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
 
-.motto-highlight-purple {
-  background: linear-gradient(90deg, #a68bff, #d3b8ff);
+.dark .motto-highlight-blue {
+  background: linear-gradient(90deg, #5fb8ff, #8ce2ff);
   -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.motto-highlight-purple {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
+  text-shadow: none;
+}
+
+.dark .motto-highlight-purple {
+  background: linear-gradient(90deg, #a68bff, #d3b8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
   text-shadow: 0 0 8px rgba(210,180,255,0.25);
+}
+
+/* === 卡片内列表样式 === */
+.motto-card ul {
+  color: #475569;
+}
+
+.dark .motto-card ul {
+  color: #cbd5e1;
+}
+
+.motto-card a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.motto-card a:hover {
+  color: #1d4ed8;
+}
+
+.dark .motto-card a {
+  color: #60a5fa;
+}
+
+.dark .motto-card a:hover {
+  color: #93c5fd;
 }
