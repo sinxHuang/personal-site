@@ -84,5 +84,13 @@ export const friendsInfo: Friend[] = [
      tag: "UESTC EE",
      color: "sky",
    },
+   {
+     avatar: "https://avatars.githubusercontent.com/u/80528707?v=4",
+     name: "ShaoliHU",
+     title: "🤖 Robotics, Multi-Agent Systems",
+     link: "https://shaolihu.github.io",
+     tag: "SJTU CSE",
+     color: "indigo",
+   },
 
 ];
